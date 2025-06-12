@@ -6,4 +6,5 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
   modules: ['@nuxt/eslint'],
+  ignore: ['.mastra/**']
 })

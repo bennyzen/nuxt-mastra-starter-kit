@@ -1,0 +1,7 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+## Agent instructions
+- Always use Context7 MCP to access the documentation.
