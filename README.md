@@ -22,3 +22,7 @@ pnpm dev
 ```
 
 Deploy to [Vercel](https://vercel.com/) using the default Nuxt configuration.
+
+## Contributing
+
+Contributions welcome! 
