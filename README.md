@@ -106,10 +106,6 @@ The application will be available at http://localhost:3000
 └── AGENTS.md           # Agent development guidelines
 ```
 
-## Deployment
-
-Deploy to [Vercel](https://vercel.com/) using the default Nuxt configuration. Ensure your OpenRouter API key is configured as an environment variable in your deployment platform.
-
 ## Contributing
 
 Contributions welcome! Please refer to [AGENTS.md](AGENTS.md) for detailed guidance on working with agents and MCP integration in this repository.
