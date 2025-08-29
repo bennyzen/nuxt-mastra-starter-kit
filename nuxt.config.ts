@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-  modules: ['@nuxt/eslint'],
-  ignore: ['.mastra/**']
+  modules: ['@nuxt/eslint', 'nuxt-mcp'],
+  ignore: ['.mastra/**'],
+  // @ts-expect-error - nuxt-mcp module configuration
+  mcp: {
+    includeNuxtDocsMcp: true
+  }
 })
