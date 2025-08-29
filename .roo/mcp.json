@@ -1,12 +1,5 @@
 {
   "mcpServers": {
-    "context7": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@upstash/context7-mcp"
-      ]
-    },
     "mastra": {
       "command": "npx",
       "args": [
@@ -14,11 +7,21 @@
         "@mastra/mcp-docs-server"
       ]
     },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    },
     "nuxt": {
       "url": "http://localhost:3000/__mcp/sse"
     },
     "nuxt-docs": {
-      "url": "https://mcp.nuxt.com/sse"
+      "url": "https://mcp.nuxt.com/sse",
+      "alwaysAllow": [
+        "search_nuxt_docs"
+      ]
     }
   }
 }

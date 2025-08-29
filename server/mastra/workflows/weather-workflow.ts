@@ -1,9 +1,11 @@
-import { openai } from "@ai-sdk/openai";
+import { createOpenRouter } from "@openrouter/ai-sdk-provider";
 import { Agent } from "@mastra/core/agent";
 import { createStep, createWorkflow } from "@mastra/core/workflows";
 import { z } from "zod";
 
-const llm = openai("gpt-4o-mini");
+const llm = createOpenRouter({
+  apiKey: process.env.OPENROUTER_API_KEY,
+})("deepseek/deepseek-chat-v3.1");
 
 const agent = new Agent({
   name: "Weather Agent",
@@ -156,7 +158,7 @@ const planActivities = createStep({
       ${JSON.stringify(forecast, null, 2)}
       `;
 
-    const response = await agent.stream([
+    const response = await agent.streamVNext([
       {
         role: "user",
         content: prompt,
